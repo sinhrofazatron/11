@@ -7,7 +7,7 @@
 </p> 
 Allegro is a powerful text-to-video model that generates high-quality videos up to 6 seconds at 15 FPS and 720 p resolution from simple text input.
 
-# Model Info
+## Model Info
 <table>
   <tr>
     <th>Model</th>
@@ -57,42 +57,49 @@ Allegro is a powerful text-to-video model that generates high-quality videos up 
   </tr>
 </table>
 
-# Quick Start
+## Quick Start
+
 1. Download the [Allegro GitHub code](https://github.com/rhymes-ai/Allegro).
-2. Install the necessary requirements.  
-    a. Ensure Python >= 3.10, PyTorch >= 2.4, CUDA >= 12.4. For details, see [requirements.txt](https://github.com/rhymes-ai/Allegro/blob/main/requirements.txt).  
+   
+2. Install the necessary requirements.
+   
+    a. Ensure Python >= 3.10, PyTorch >= 2.4, CUDA >= 12.4. For details, see [requirements.txt](https://github.com/rhymes-ai/Allegro/blob/main/requirements.txt).
+    
     b. It is recommended to use Anaconda to create a new environment (Python >= 3.10) to run the following example.
-3. Download the [Allegro model weights](https://huggingface.co/rhymes-ai/Allegro).
-4. Run inference.
-```python
-python single_inference.py \
---user_prompt 'A seaside harbor with bright sunlight and sparkling seawater, with many boats in the water. From an aerial view, the boats vary in size and color, some moving and some stationary. Fishing boats in the water suggest that this location might be a popular spot for docking fishing boats.' \
---vae your/path/to/vae \
---dit your/path/to/transformer \
---text_encoder your/path/to/text_encoder \
---tokenizer your/path/to/tokenizer \
---guidance_scale 7.5 \
---num_sampling_steps 100 \
---seed 42
-```
-# Limitation
+    
+   
+4. Download the [Allegro model weights](https://huggingface.co/rhymes-ai/Allegro).
+   
+6. Run inference.
+   
+    ```python
+    python single_inference.py \
+    --user_prompt 'A seaside harbor with bright sunlight and sparkling seawater, with many boats in the water. From an aerial view, the boats vary in size and color, some moving and some stationary. Fishing boats in the water suggest that this location might be a popular spot for docking fishing boats.' \
+    --vae your/path/to/vae \
+    --dit your/path/to/transformer \
+    --text_encoder your/path/to/text_encoder \
+    --tokenizer your/path/to/tokenizer \
+    --guidance_scale 7.5 \
+    --num_sampling_steps 100 \
+    --seed 42
+    ```
+
+## Limitation
 - The model cannot render celebrities, legible text, specific locations, streets or buildings.
 
-# Future Plan
+## Future Plan
 - Multiple GPU inference and further speed up (PAB)
 - Text & Image-To-Video (TI2V) video generation
 - Motion-controlled video generation
 - Visual quality enhancement
 
-# Support
-If you encounter any problems or have any suggestions, feel free to open an [issue](https://github.com/rhymes-ai/Allegro/issues) or send an email to huanyang@rhymes.ai. 
+## Support
+If you encounter any problems or have any suggestions, feel free to [open an issue](https://github.com/rhymes-ai/Allegro/issues/new) or send an email to huanyang@rhymes.ai. 
 
-# Citation
-
-# License
+## License
 This repo is released under the [Apache 2.0 License](https://github.com/rhymes-ai/Allegro/blob/main/LICENSE.txt).
 
-# Disclaimer
+## Disclaimer
 
 The Allegro series models are provided on an "AS IS" basis, and we disclaim any liability for consequences or damages arising from your use. Users are kindly advised to ensure compliance with all applicable laws and regulations. This includes, but is not limited to, prohibitions against illegal activities and the generation of content that is violent, pornographic, obscene, or otherwise deemed non-safe, inappropriate, or illegal. By using these models, you agree that we shall not be held accountable for any consequences resulting from your use.
 
