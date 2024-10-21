@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/rhymes-ai/Allegro/blob/main/allegro/assets/banner_white.gif"/>
+<img src="https://github.com/rhymes-ai/Allegro/blob/main/assets/banner_white.gif"/>
 </p>
 
 <p align="center">
