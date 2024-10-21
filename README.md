@@ -90,7 +90,7 @@ If you encounter any problems or have any suggestions, feel free to open an [iss
 # Citation
 
 # License
-This repo is released under the Apache 2.0 License.
+This repo is released under the [Apache 2.0 License](https://github.com/rhymes-ai/Allegro/blob/main/LICENSE.txt).
 
 # Disclaimer
 
