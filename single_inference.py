@@ -72,7 +72,7 @@ low quality, normal quality, jpeg artifacts, signature, watermark, username, blu
         generator = torch.Generator(device="cuda:0").manual_seed(args.seed)
     ).video[0]
 
-    imageio.mimwrite(f"{args.save_path}/test_video.mp4", out_video, fps=15, quality=8)  # highest quality is 10, lowest is 0
+    imageio.mimwrite(args.save_path, out_video, fps=15, quality=8)  # highest quality is 10, lowest is 0
 
 
 if __name__ == "__main__":
@@ -83,7 +83,7 @@ if __name__ == "__main__":
     parser.add_argument("--dit", type=str, default='')
     parser.add_argument("--text_encoder", type=str, default='')
     parser.add_argument("--tokenizer", type=str, default='')
-    parser.add_argument("--save_path", type=str, default="./output_videos")
+    parser.add_argument("--save_path", type=str, default="./output_videos/test_video.mp4")
     parser.add_argument("--guidance_scale", type=float, default=7.5)
     parser.add_argument("--num_sampling_steps", type=int, default=100)
     parser.add_argument("--seed", type=int, default=42)
