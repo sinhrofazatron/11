@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
- <a href="https://rhymes.ai/" target="_blank"> Gallery</a> · <a href="https://huggingface.co/rhymes-ai/Allegro" target="_blank">HuggingFace</a> · <a href="https://www.rhymes.ai/blog-details/" target="_blank">Blog</a> · <a href="https://arxiv.org/pdf/2410.05993" target="_blank">Paper</a> · <a href="https://discord" target="_blank">Discord</a> 
+ <a href="https://rhymes.ai/allegro_gallery" target="_blank"> Gallery</a> · <a href="https://huggingface.co/rhymes-ai/Allegro" target="_blank">Hugging Face</a> · <a href="https://rhymes.ai/blog-details/allegro-advanced-video-generation-model" target="_blank">Blog</a> · <a href="https://arxiv.org/pdf/2410.05993" target="_blank">Paper</a> · <a href="https://discord.com/invite/u8HxU23myj" target="_blank">Discord</a> 
 </p> 
-Allegro is capable of producing high-quality, 6-second videos at 30 frames per second and 720p resolution from simple text prompts.
+Allegro is a powerful text-to-video model that generates high-quality videos up to 6 seconds at 15 FPS and 720p resolution from simple text input.
 
 # Model Info
 <table>
@@ -37,7 +37,7 @@ Allegro is capable of producing high-quality, 6-second videos at 30 frames per s
   </tr>
   <tr>
     <th>Context Length</th>
-    <td>79.2k</td>
+    <td>79.2K</td>
   </tr>
   <tr>
     <th>Resolution</th>
@@ -57,30 +57,23 @@ Allegro is capable of producing high-quality, 6-second videos at 30 frames per s
   </tr>
 </table>
 
-# Requirement
-- Download the weight in Hugging Face: [rhymes-ai/Allegro ](https://huggingface.co/rhymes-ai/Allegro)
-- Prerequisites: Python >= 3.10, PyTorch >= 2.4, CUDA >= 12.4.
-- Tip: It is recommended to use Anaconda to create a new environment (Python >= 3.10) to run the following example.
-```python 
-  git clone https://github.com/rhythms-ai/allegro
-  conda create -n allegro python=3.10 -y
-  conda activate allegro
-  
-  pip install requirements
-```
-
-# Inference
-Tip: It is highly recommended to use a video frame interpolation model (such as [EMA-VFI](https://github.com/mcg-nju/ema-vfi)) to enhance the result to 30 FPS.
+# Quick Start
+1. Download the [Allegro GitHub code](https://github.com/rhymes-ai/Allegro).
+2. Install the necessary requirements.  
+    a. Ensure Python >= 3.10, PyTorch >= 2.4, CUDA >= 12.4. For details, see [requirements.txt](https://github.com/rhymes-ai/Allegro/blob/main/requirements.txt).  
+    b. It is recommended to use Anaconda to create a new environment (Python >= 3.10) to run the following example.
+3. Download the [Allegro model weights](https://huggingface.co/rhymes-ai/Allegro).
+4. Run inference.
 ```python
-  python single_inference.py \
-  --user_prompt 'A seaside harbor with bright sunlight and sparkling seawater, with many boats in the water. From an aerial view, the boats vary in size and color, some moving and some stationary. Fishing boats in the water suggest that this location might be a popular spot for docking fishing boats.' \
-  --vae your/path/to/vae \
-  --dit your/path/to/transformer \
-  --text_encoder your/path/to/text_encoder \
-  --tokenizer your/path/to/tokenizer \
-  --guidance_scale 7.5 \
-  --num_sampling_steps 100 \
-  --seed 42
+python single_inference.py \
+--user_prompt 'A seaside harbor with bright sunlight and sparkling seawater, with many boats in the water. From an aerial view, the boats vary in size and color, some moving and some stationary. Fishing boats in the water suggest that this location might be a popular spot for docking fishing boats.' \
+--vae your/path/to/vae \
+--dit your/path/to/transformer \
+--text_encoder your/path/to/text_encoder \
+--tokenizer your/path/to/tokenizer \
+--guidance_scale 7.5 \
+--num_sampling_steps 100 \
+--seed 42
 ```
 # Limitation
 - The model cannot render celebrities, legible text, specific locations, streets or buildings.
@@ -101,7 +94,7 @@ This repo is released under the Apache 2.0 License.
 
 # Disclaimer
 
-The Allegro model is provided on an "AS IS" basis, and we disclaim any liability for consequences or damages arising from your use. Users are kindly advised to ensure compliance with all applicable laws and regulations. This includes, but is not limited to, prohibitions against illegal activities and the generation of content that is violent, pornographic, obscene, or otherwise deemed non-safe, inappropriate, or illegal. By using these models, you agree that we shall not be held accountable for any consequences resulting from your use.
+The Allegro series models are provided on an "AS IS" basis, and we disclaim any liability for consequences or damages arising from your use. Users are kindly advised to ensure compliance with all applicable laws and regulations. This includes, but is not limited to, prohibitions against illegal activities and the generation of content that is violent, pornographic, obscene, or otherwise deemed non-safe, inappropriate, or illegal. By using these models, you agree that we shall not be held accountable for any consequences resulting from your use.
 
 # Acknowledgment
 We extend our heartfelt appreciation for the great contribution to the open-source community, especially Open-Sora-Plan, as we build our diffusion transformer (DiT) based on Open-Sora-Plan v1.2.
