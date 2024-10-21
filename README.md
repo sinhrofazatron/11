@@ -2,6 +2,9 @@
 <p align="center">
 <img src="https://github.com/rhymes-ai/Allegro/blob/main/allegro/assets/Allegro_banner.gif"/>
 </p>
+<p align="center">
+<img src="https://github.com/rhymes-ai/Allegro/blob/main/allegro/assets/banner_white.gif"/>
+</p>
 
 
 <p align="center">
