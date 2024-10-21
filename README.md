@@ -5,7 +5,7 @@
 <p align="center">
  <a href="https://rhymes.ai/allegro_gallery" target="_blank"> Gallery</a> · <a href="https://huggingface.co/rhymes-ai/Allegro" target="_blank">Hugging Face</a> · <a href="https://rhymes.ai/blog-details/allegro-advanced-video-generation-model" target="_blank">Blog</a> · <a href="https://discord.com/invite/u8HxU23myj" target="_blank">Discord</a> 
 </p> 
-Allegro is a powerful text-to-video model that generates high-quality videos up to 6 seconds at 15 FPS and 720p resolution from simple text input.
+Allegro is a powerful text-to-video model that generates high-quality videos up to 6 seconds at 15 FPS and 720 p resolution from simple text input.
 
 # Model Info
 <table>
@@ -85,7 +85,7 @@ python single_inference.py \
 - Visual quality enhancement
 
 # Support
-If you encounter any problems or have any suggestions, feel free to open an [issue](https://github.com/rhymes-ai/Allegro/issue) or send an email to huanyang@rhymes.ai. 
+If you encounter any problems or have any suggestions, feel free to open an [issue](https://github.com/rhymes-ai/Allegro/issues) or send an email to huanyang@rhymes.ai. 
 
 # Citation
 
