@@ -63,9 +63,9 @@ Allegro is a powerful text-to-video model that generates high-quality videos up 
    
 2. Install the necessary requirements.
    
-    a. Ensure Python >= 3.10, PyTorch >= 2.4, CUDA >= 12.4. For details, see [requirements.txt](https://github.com/rhymes-ai/Allegro/blob/main/requirements.txt).  
+    2.1 Ensure Python >= 3.10, PyTorch >= 2.4, CUDA >= 12.4. For details, see [requirements.txt](https://github.com/rhymes-ai/Allegro/blob/main/requirements.txt).  
     
-    b. It is recommended to use Anaconda to create a new environment (Python >= 3.10) to run the following example.  
+    2.2 It is recommended to use Anaconda to create a new environment (Python >= 3.10) to run the following example.  
     
    
 4. Download the [Allegro model weights](https://huggingface.co/rhymes-ai/Allegro).
