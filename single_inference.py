@@ -57,6 +57,9 @@ low quality, normal quality, jpeg artifacts, signature, watermark, username, blu
 """
 
     user_prompt = positive_prompt.format(args.user_prompt.lower().strip())
+    if args.enable_cpu_offload:
+        allegro_pipeline.enable_sequential_cpu_offload()
+        print("cpu offload enabled")
     out_video = allegro_pipeline(
         user_prompt, 
         negative_prompt = negative_prompt, 
@@ -68,7 +71,7 @@ low quality, normal quality, jpeg artifacts, signature, watermark, username, blu
         max_sequence_length=512,
         generator = torch.Generator(device="cuda:0").manual_seed(args.seed)
     ).video[0]
-    
+
     imageio.mimwrite(f"{args.save_path}/test_video.mp4", out_video, fps=15, quality=8)  # highest quality is 10, lowest is 0
 
 
@@ -84,6 +87,7 @@ if __name__ == "__main__":
     parser.add_argument("--guidance_scale", type=float, default=7.5)
     parser.add_argument("--num_sampling_steps", type=int, default=100)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--enable_cpu_offload", action='store_true')
 
     args = parser.parse_args()
     if not os.path.exists(args.save_path):
