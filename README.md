@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
- <a href="https://rhymes.ai/allegro_gallery" target="_blank"> Gallery</a> · <a href="https://huggingface.co/rhymes-ai/Allegro" target="_blank">Hugging Face</a> · <a href="https://rhymes.ai/blog-details/allegro-advanced-video-generation-model" target="_blank">Blog</a> · <a href="https://arxiv.org/pdf/2410.05993" target="_blank">Paper</a> · <a href="https://discord.com/invite/u8HxU23myj" target="_blank">Discord</a> 
+ <a href="https://rhymes.ai/allegro_gallery" target="_blank"> Gallery</a> · <a href="https://huggingface.co/rhymes-ai/Allegro" target="_blank">Hugging Face</a> · <a href="https://rhymes.ai/blog-details/allegro-advanced-video-generation-model" target="_blank">Blog</a> · <a href="https://discord.com/invite/u8HxU23myj" target="_blank">Discord</a> 
 </p> 
 Allegro is a powerful text-to-video model that generates high-quality videos up to 6 seconds at 15 FPS and 720p resolution from simple text input.
 
