@@ -84,13 +84,13 @@ Allegro is a powerful text-to-video model that generates high-quality videos up 
     --seed 42
     ```
   
-  use '--enable_cpu_offload' to offload model into cpu for less GPU memory cost (about 9.3G), but inference time will increase significantly.
+    Use '--enable_cpu_offload' to offload model into cpu for less GPU memory cost (about 9.3G, compared to 27.5G if cpu offload is not enabled), but the inference time will increase significantly.
 
-5. (Optional) Use video frame interpolation method to interpolate the result video to 30 FPS.
+5. (Optional) Interpolate the video to 30 FPS.
 
-  It is recommended to use [EMA-VFI](https://github.com/MCG-NJU/EMA-VFI) to interpolate the resulting video from 15 FPS to 30 FPS.
+    It is recommended to use [EMA-VFI](https://github.com/MCG-NJU/EMA-VFI) to interpolate the video from 15 FPS to 30 FPS.
   
-  For better visual quality, please use imageio to save the video.
+    For better visual quality, please use imageio to save the video.
 
 ## Limitation
 - The model cannot render celebrities, legible text, specific locations, streets or buildings.
