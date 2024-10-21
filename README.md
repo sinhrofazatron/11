@@ -49,7 +49,7 @@ Allegro is a powerful text-to-video model that generates high-quality videos up 
   </tr>
   <tr>
     <th>Video Length</th>
-    <td>6 seconds @ 15 fps</td>
+    <td>6 seconds @ 15 FPS</td>
   </tr>
   <tr>
     <th>Single GPU Memory Usage</th>
