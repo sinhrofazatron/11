@@ -83,7 +83,14 @@ Allegro is a powerful text-to-video model that generates high-quality videos up 
     --num_sampling_steps 100 \
     --seed 42
     ```
-use '--enable_cpu_offload' to offload model into cpu for less GPU memory cost (about 9.3G), but inference time will increase significantly.
+  
+  use '--enable_cpu_offload' to offload model into cpu for less GPU memory cost (about 9.3G), but inference time will increase significantly.
+
+5. (Optional) Use video frame interpolation method to interpolate the result video to 30 FPS.
+
+  It is recommended to use [EMA-VFI](https://github.com/MCG-NJU/EMA-VFI) to interpolate the resulting video from 15 FPS to 30 FPS.
+  
+  For better visual quality, please use imageio to save the video.
 
 ## Limitation
 - The model cannot render celebrities, legible text, specific locations, streets or buildings.
@@ -116,3 +123,4 @@ We extend our heartfelt appreciation for the great contribution to the open-sour
 - [CLIP](https://github.com/openai/CLIP): A powerful text-image embedding model.
 - [T5](https://github.com/google-research/text-to-text-transfer-transformer): A powerful text encoder.
 - [Playground](https://playground.com/blog/playground-v2-5): A state-of-the-art open-source model in text-to-image generation.
+- [EMA-VFI](https://github.com/MCG-NJU/EMA-VFI): A video frame interpolation model.

@@ -90,7 +90,8 @@ if __name__ == "__main__":
     parser.add_argument("--enable_cpu_offload", action='store_true')
 
     args = parser.parse_args()
-    if not os.path.exists(args.save_path):
-        os.makedirs(args.save_path)
+
+    if os.path.dirname(args.save_path) != '' and (not os.path.exists(os.path.dirname(args.save_path))):
+        os.makedirs(os.path.dirname(args.save_path))
     
     single_inference(args)
