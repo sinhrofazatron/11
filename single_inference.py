@@ -57,9 +57,11 @@ low quality, normal quality, jpeg artifacts, signature, watermark, username, blu
 """
 
     user_prompt = positive_prompt.format(args.user_prompt.lower().strip())
+
     if args.enable_cpu_offload:
         allegro_pipeline.enable_sequential_cpu_offload()
         print("cpu offload enabled")
+        
     out_video = allegro_pipeline(
         user_prompt, 
         negative_prompt = negative_prompt, 
