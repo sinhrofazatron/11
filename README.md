@@ -1,11 +1,6 @@
-# Allegro
-<p align="center">
-<img src="https://github.com/rhymes-ai/Allegro/blob/main/allegro/assets/Allegro_banner.gif"/>
-</p>
 <p align="center">
 <img src="https://github.com/rhymes-ai/Allegro/blob/main/allegro/assets/banner_white.gif"/>
 </p>
-
 
 <p align="center">
  <a href="https://rhymes.ai/" target="_blank"> Gallery</a> · <a href="https://huggingface.co/rhymes-ai/Allegro" target="_blank">HuggingFace</a> · <a href="https://www.rhymes.ai/blog-details/" target="_blank">Blog</a> · <a href="https://arxiv.org/pdf/2410.05993" target="_blank">Paper</a> · <a href="https://discord" target="_blank">Discord</a> 
