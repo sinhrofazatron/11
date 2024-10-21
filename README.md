@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
- <a href="https://rhymes.ai/allegro_gallery" target="_blank"> Gallery</a> · <a href="https://huggingface.co/rhymes-ai/Allegro" target="_blank">Hugging Face</a> · <a href="https://rhymes.ai/blog-details/allegro-advanced-video-generation-model" target="_blank">Blog</a> · <a href="https://discord.com/invite/u8HxU23myj" target="_blank">Discord</a>  · <a href="https://docs.google.com/forms/d/e/1FAIpQLSfq4Ez48jqZ7ncI7i4GuL7UyCrltfdtrOCDnm_duXxlvh5YmQ/viewform" target="_blank">Join Waitlist</a> 
+ <a href="https://rhymes.ai/allegro_gallery" target="_blank"> Gallery</a> · <a href="https://huggingface.co/rhymes-ai/Allegro" target="_blank">Hugging Face</a> · <a href="https://rhymes.ai/blog-details/allegro-advanced-video-generation-model" target="_blank">Blog</a> · <a href="https://discord.com/invite/u8HxU23myj" target="_blank">Discord</a>  · <a href="https://docs.google.com/forms/d/e/1FAIpQLSfq4Ez48jqZ7ncI7i4GuL7UyCrltfdtrOCDnm_duXxlvh5YmQ/viewform" target="_blank">Join Waitlist</a> (Try it on Discord!) 
 </p> 
 Allegro is a powerful text-to-video model that generates high-quality videos up to 6 seconds at 15 FPS and 720 p resolution from simple text input.
 
@@ -63,14 +63,13 @@ Allegro is a powerful text-to-video model that generates high-quality videos up 
    
 2. Install the necessary requirements.
    
-    2.1 Ensure Python >= 3.10, PyTorch >= 2.4, CUDA >= 12.4. For details, see [requirements.txt](https://github.com/rhymes-ai/Allegro/blob/main/requirements.txt).  
+   - Ensure Python >= 3.10, PyTorch >= 2.4, CUDA >= 12.4. For details, see [requirements.txt](https://github.com/rhymes-ai/Allegro/blob/main/requirements.txt).  
     
-    2.2 It is recommended to use Anaconda to create a new environment (Python >= 3.10) to run the following example.  
-    
+   - It is recommended to use Anaconda to create a new environment (Python >= 3.10) to run the following example.  
    
-4. Download the [Allegro model weights](https://huggingface.co/rhymes-ai/Allegro).
+3. Download the [Allegro model weights](https://huggingface.co/rhymes-ai/Allegro).
    
-6. Run inference.
+4. Run inference.
    
     ```python
     python single_inference.py \
