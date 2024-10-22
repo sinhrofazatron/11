@@ -84,7 +84,7 @@ Allegro is a powerful text-to-video model that generates high-quality videos up 
     --seed 42
     ```
   
-    Use '--enable_cpu_offload' to offload the model into CPU for less GPU memory cost (about 9.3G, compared to 27.5G if CPU offload is not enabled), but the inference time will increase significantly.
+    Use `--enable_cpu_offload` to offload the model into CPU for less GPU memory cost (about 9.3G, compared to 27.5G if CPU offload is not enabled), but the inference time will increase significantly.
 
 5. (Optional) Interpolate the video to 30 FPS.
 
