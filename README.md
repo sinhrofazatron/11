@@ -108,7 +108,7 @@ If you encounter any problems or have any suggestions, feel free to [open an iss
 Please consider citing our technical report if you find the code and pre-trained models useful for your project.
 
 ```
-@article{zhou2024allegro,
+@article{allegro2024,
   title={Allegro: Open the Black Box of Commercial-Level Video Generation Model},
   author={Yuan Zhou and Qiuyue Wang and Yuxuan Cai and Huan Yang},
   journal={arXiv preprint arXiv:2410.15458},
