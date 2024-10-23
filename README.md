@@ -74,7 +74,7 @@ Allegro is a powerful text-to-video model that generates high-quality videos up 
     ```python
     python single_inference.py \
     --user_prompt 'A seaside harbor with bright sunlight and sparkling seawater, with many boats in the water. From an aerial view, the boats vary in size and color, some moving and some stationary. Fishing boats in the water suggest that this location might be a popular spot for docking fishing boats.' \
-    --save_path ./output_videos/test_video.mp4
+    --save_path ./output_videos/test_video.mp4 \
     --vae your/path/to/vae \
     --dit your/path/to/transformer \
     --text_encoder your/path/to/text_encoder \
